@@ -15,6 +15,6 @@ audio_array = generate_audio(text_prompt, history_prompt="v2/en_speaker_1")
 ```
 
 ## CMD命令行运行
-```python
+```Shell
 python -m bark --text "Hello, my name is Suno." --output_filename "example.wav"
 ```
