@@ -1,10 +1,20 @@
-°²×°ËùĞèÒªµÄ¿â£º
+text_to_voice
+================================
+
+## å®‰è£…æ‰€éœ€è¦çš„åº“ï¼š
+```python
 pip install git+https://github.com/suno-ai/bark.git
-×Ô¶¨ÒåÎÄ±¾ÄÚÈİ
+```
+## è‡ªå®šä¹‰æ–‡æœ¬å†…å®¹
+```python
 text_prompt = """
-    I have a silky smooth voice, and today I will tell you about 
+    I have a silky smooth voice, and today I will tell you about
     the exercise regimen of the common sloth.
 """
 audio_array = generate_audio(text_prompt, history_prompt="v2/en_speaker_1")
-CMDÃüÁîĞĞÔËĞĞ
+```
+
+## CMDå‘½ä»¤è¡Œè¿è¡Œ
+```python
 python -m bark --text "Hello, my name is Suno." --output_filename "example.wav"
+```
