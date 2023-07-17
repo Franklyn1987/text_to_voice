@@ -11,16 +11,18 @@ from scipy.io.wavfile import write as write_wav
 from IPython.display import Audio
 ###############################################
 #以下开始
-
-
+# read XXX.txt
+data = ''
+with open('text_wait.txt','r',encoding='utf-8') as f:
+    for line in f.readlines():
+        line = line.strip()
+        data += line
+print(data)
 # download and load all models
 preload_models()
 
 # generate audio from text
-text_prompt = """
-     Hello, 我是 [laughs] 
-     我要去哪里呢?
-"""
+text_prompt = data
 audio_array = generate_audio(text_prompt)
 
 # save audio to disk
