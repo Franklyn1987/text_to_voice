@@ -18,3 +18,9 @@ audio_array = generate_audio(text_prompt, history_prompt="v2/en_speaker_1")
 ```Shell
 python -m bark --text "Hello, my name is Suno." --output_filename "example.wav"
 ```
+## 在CMD中运行
+首先在**读书.bat**里面将**text_to_voice.py** 的路径修改成所在电脑的绝对路径。将bat路径添加到环境变量中。
+运行如下代码：
+```shell
+读书 D:\text_to_voice\text_wait.txt
+```
